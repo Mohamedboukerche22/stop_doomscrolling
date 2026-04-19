@@ -16,5 +16,11 @@
     "priority": 1,
     "action": { "type": "block" },
     "condition": { "urlFilter": "youtube.com/shorts/*", "resourceTypes": ["main_frame"] }
-  }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": { "urlFilter": "https://www.facebook.com/reel/*", "resourceTypes": ["main_frame"] }
+  }  
 ]

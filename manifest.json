@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Mode: No Distractions",
+  "version": "1.0",
+  "description": "Blocks TikTok, Instagram, and YouTube Shorts.",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "*://*.instagram.com/*",
+    "*://*.tiktok.com/*",
+    "*://*.youtube.com/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "ruleset_1",
+      "enabled": true,
+      "path": "rules.json"
+    }]
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
